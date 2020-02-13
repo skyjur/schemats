@@ -65,6 +65,7 @@ export namespace UsersFields {
     export type jsonArrayCol = Array<Object> | null;
     export type jsonbArrayCol = Array<Object> | null;
     export type timestamptzArrayCol = Array<Date> | null;
+    export type enumArrayCol = Array<FormatEnum> | null;
 
 }
 
@@ -130,5 +131,6 @@ export interface Users {
     jsonArrayCol: UsersFields.jsonArrayCol;
     jsonbArrayCol: UsersFields.jsonbArrayCol;
     timestamptzArrayCol: UsersFields.timestamptzArrayCol;
+    enumArrayCol: UsersFields.enumArrayCol;
 
 }
